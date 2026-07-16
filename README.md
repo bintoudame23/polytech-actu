@@ -1,28 +1,37 @@
-# Polytech Actu
+# Polytech Actu — Version 1 (simple, sans MVC)
 
-Application d'actualités développée de manière progressive, version par version,
-jusqu'à une architecture MVC complète.
+## Principe
 
-## Organisation des branches
+Cette version 1 est volontairement **simple** : chaque page PHP contient à la
+fois la connexion, les requêtes SQL et le HTML. C'est la base de départ,
+avant de passer à l'architecture MVC (voir la branche `v2`).
 
-| Branche | Description |
-|---|---|
-| `main` | Ce README, page d'accueil du dépôt |
-| `v1` | Version 1 : HTML, CSS, JS, PHP simple (pas de MVC) |
-| `v2` | Version 2 : même application, réorganisée en architecture MVC |
+## Fichiers
 
-## Comment naviguer entre les versions
-
-```bash
-git clone <url-du-repo>
-cd polytech-actu
-
-# Pour voir/lancer la version 1 (simple)
-git checkout v1
-
-# Pour voir/lancer la version 2 (MVC)
-git checkout v2
+```
+actu-app-v1/
+├── db.php                -> connexion à la base de données
+├── index.php              -> page d'accueil (liste + filtre par catégorie)
+├── detail.php              -> détail d'un article
+├── article_form.php        -> formulaire ajout/modification d'un article
+├── article_action.php      -> traite le formulaire (ajout/modif/suppression)
+├── categorie_form.php      -> liste + formulaire des catégories
+├── categorie_action.php    -> traite le formulaire catégorie
+├── css/style.css           -> styles du site
+└── mglsi_news.sql          -> script de création de la base
 ```
 
-Chaque branche contient son propre `README.md` avec les instructions
-d'installation spécifiques à cette version.
+## Installation
+
+1. Importer `mglsi_news.sql` dans MySQL (via phpMyAdmin par exemple).
+2. Copier ce dossier dans `htdocs` (XAMPP).
+3. Vérifier les identifiants dans `db.php` (host, port, user, password).
+4. Ouvrir `http://localhost/actu-app-v1/`.
+
+## Fonctionnalités
+
+- Accueil listant tous les articles.
+- Filtrage par catégorie via le menu.
+- Détail d'un article.
+- Ajout / modification / suppression d'un article.
+- Ajout / modification / suppression d'une catégorie.
