@@ -1,12 +1,5 @@
 <?php
-/**
- * views/accueil.php
- * -----------------------------------------------------------
- * Cette vue affiche uniquement du HTML. Toutes les données
- * dont elle a besoin ($articles, $categories, $categorieActive)
- * lui sont transmises par ArticleController::accueil().
- * -----------------------------------------------------------
- */
+
 $categories = $data['categories'];
 $categorieActive = $data['categorieActive'];
 $articles = $data['articles'];
