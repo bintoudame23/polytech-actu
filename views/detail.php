@@ -1,8 +1,5 @@
 <?php
-/**
- * views/detail.php
- * Affiche un article en entier (titre + contenu complet).
- */
+
 $categories = $data['categories'];
 $article = $data['article'];
 $categorieActive = null;
