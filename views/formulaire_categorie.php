@@ -1,10 +1,5 @@
 <?php
-/**
- * views/formulaire_categorie.php
- * Affiche la liste des catégories existantes ainsi qu'un
- * formulaire pour en ajouter une nouvelle ou modifier l'une
- * d'entre elles.
- */
+
 $categorieActive = null;
 $categorieAModifier = $data['categorieAModifier'];
 
