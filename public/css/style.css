@@ -1,0 +1,208 @@
+/* ===========================================================
+   style.css
+   Styles généraux du site, pensés pour ressembler à la maquette :
+   bandeau noir + titre, menu noir avec soulignement coloré,
+   et articles présentés sous forme de cartes grises arrondies.
+   =========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* ---- Bandeau du haut avec le titre du site ---- */
+header.site-header {
+    background-color: #000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header.site-header h1 {
+    margin: 0;
+    color: #fff;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 2.4rem;
+}
+
+/* ---- Menu de navigation ---- */
+nav.site-nav {
+    background-color: #000;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #00853f, #fdef42, #e31b23) 1;
+}
+
+nav.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 12px 10px;
+}
+
+nav.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 6px;
+    border-bottom: 3px solid transparent;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.actif {
+    border-bottom: 3px solid #e31b23;
+}
+
+/* ---- Contenu principal ---- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+main h2.titre-page {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+/* ---- Carte article (liste) ---- */
+.carte-article {
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+}
+
+.carte-article h3 {
+    margin-top: 0;
+    font-family: 'Comic Sans MS', 'Segoe Print', cursive;
+    font-size: 1.3rem;
+}
+
+.carte-article h3 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.carte-article p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.carte-article .meta {
+    font-size: 0.85rem;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.carte-article .actions {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+.carte-article .actions a {
+    margin-right: 12px;
+    color: #0645ad;
+}
+
+/* ---- Page détail d'un article ---- */
+.detail-article {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 25px 30px;
+}
+
+.detail-article h2 {
+    font-family: 'Comic Sans MS', 'Segoe Print', cursive;
+}
+
+.detail-article p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ---- Formulaires (ajout / modification) ---- */
+form.formulaire {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 25px 30px;
+    font-family: Arial, sans-serif;
+}
+
+form.formulaire label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form.formulaire input[type="text"],
+form.formulaire select,
+form.formulaire textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-family: inherit;
+}
+
+form.formulaire textarea {
+    min-height: 150px;
+}
+
+form.formulaire button {
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form.formulaire button:hover {
+    background-color: #333;
+}
+
+/* ---- Barre d'actions générales (ex: ajouter un article) ---- */
+.barre-actions {
+    text-align: right;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.barre-actions a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.barre-actions a:hover {
+    background-color: #333;
+}
+
+.lien-retour {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: #0645ad;
+}
