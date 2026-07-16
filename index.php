@@ -1,15 +1,5 @@
 <?php
-/**
- * index.php - Contrôleur frontal (Front Controller)
- * -----------------------------------------------------------
- * Dans une architecture MVC, TOUTES les requêtes passent par
- * ce seul fichier. Il regarde le paramètre ?page=... dans
- * l'URL et appelle la bonne méthode du bon contrôleur.
- *
- * C'est le seul fichier "routeur" du projet : il ne contient
- * ni SQL, ni HTML, juste un aiguillage (switch).
- * -----------------------------------------------------------
- */
+
 
 require_once __DIR__ . '/controllers/ArticleController.php';
 require_once __DIR__ . '/controllers/CategorieController.php';
