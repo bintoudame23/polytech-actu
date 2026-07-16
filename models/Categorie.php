@@ -1,12 +1,5 @@
 <?php
-/**
- * models/Categorie.php
- * -----------------------------------------------------------
- * Le "Modèle" est la seule partie du code qui parle à la base
- * de données. Il contient uniquement des requêtes SQL, pas
- * d'affichage (HTML) ni de logique de page.
- * -----------------------------------------------------------
- */
+
 
 require_once __DIR__ . '/../config/Database.php';
 
