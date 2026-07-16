@@ -1,10 +1,5 @@
 <?php
-/**
- * views/formulaire_article.php
- * Un seul et même formulaire sert pour l'ajout ET la modification :
- * - si $article est vide -> on est en mode "ajout"
- * - si $article contient des données -> on est en mode "modification"
- */
+
 $categories = $data['categories'];
 $article = $data['article'];
 $categorieActive = null;
