@@ -1,12 +1,4 @@
 <?php
-/**
- * controllers/ArticleController.php
- * -----------------------------------------------------------
- * Le "Contrôleur" fait le lien entre le Modèle et la Vue :
- * il récupère les données via le Modèle, puis choisit quelle
- * Vue afficher. Il ne contient JAMAIS de SQL et JAMAIS de HTML.
- * -----------------------------------------------------------
- */
 
 require_once __DIR__ . '/../models/Article.php';
 require_once __DIR__ . '/../models/Categorie.php';
