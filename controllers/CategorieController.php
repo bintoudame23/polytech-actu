@@ -1,11 +1,4 @@
 <?php
-/**
- * controllers/CategorieController.php
- * -----------------------------------------------------------
- * Même logique que ArticleController, mais pour gérer les
- * catégories (ajouter / modifier / supprimer).
- * -----------------------------------------------------------
- */
 
 require_once __DIR__ . '/../models/Categorie.php';
 
