@@ -1,11 +1,4 @@
 <?php
-/**
- * models/Article.php
- * -----------------------------------------------------------
- * Même principe que Categorie.php : uniquement des requêtes
- * SQL pour lire/écrire des articles dans la base.
- * -----------------------------------------------------------
- */
 
 require_once __DIR__ . '/../config/Database.php';
 
@@ -19,8 +12,6 @@ class Article
         $this->pdo = $db->getConnexion();
     }
 
-    // Récupère tous les articles (avec le libellé de leur catégorie grâce à une jointure)
-    // Si $categorieId est fourni, on ne récupère que les articles de cette catégorie
     public function getAll($categorieId = null)
     {
         $sql = "SELECT a.*, c.libelle AS categorie_libelle
